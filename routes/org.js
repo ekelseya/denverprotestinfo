@@ -33,7 +33,7 @@ router.post("/groups", isLoggedIn, function (req, res) {
 });
 
 router.get("/groups/new", isLoggedIn, function (req, res) {
-    res.render("groups/new")
+    res.render("orgs/new")
 });
 
 router.get("/groups/:id", function (req, res) {
@@ -41,7 +41,7 @@ router.get("/groups/:id", function (req, res) {
         if (err) {
             console.log(err);
         } else {
-            res.render("groups/show", {organization: requestedOrganization})
+            res.render("orgs/show", {organization: requestedOrganization})
         }
     });
 });
