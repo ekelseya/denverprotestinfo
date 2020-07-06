@@ -8,6 +8,8 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 
 const secret = require("./constants/secret");
+const seedDB = require("./seeds");
+
 const Organization = require("./models/org");
 const User = require("./models/user.js");
 
@@ -21,6 +23,8 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 mongoose.connect("mongodb://localhost/protest");
+
+seedDB();
 
 app.use(require("express-session")(({
     secret: secret.secret,
