@@ -4,7 +4,6 @@ const orgSchema = new mongoose.Schema({
     name: String,
     image: String,
     description: String,
-    contact: String,
     credible: Boolean,
     // comments: [
     //     {

@@ -16,13 +16,13 @@ router.get("/groups", function (req, res) {
     })
 });
 
+// TODO: Should refactor to an object
 router.post("/groups", isLoggedIn, function (req, res) {
     const name = req.body.name;
     const image = req.body.image;
     const description = req.body.description;
-    const contact = req.body.contact;
     const credible = req.body.credible;
-    const newOrganization = {name: name, image: image, description: description, contact: contact, credible: credible};
+    const newOrganization = {name: name, image: image, description: description, credible: credible};
     Organization.create(newOrganization, function (err) {
         if (err){
             console.log(err);
