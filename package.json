@@ -1,0 +1,25 @@
+{
+  "name": "denverprotestinfo",
+  "version": "1.0.0",
+  "description": "A simple Node/Express/MongoDB web app to share information on protest groups in the Denver, CO, area",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekelseya/denverprotestinfo.git"
+  },
+  "keywords": [
+    "Denver",
+    "Colorado",
+    "CO",
+    "Protest"
+  ],
+  "author": "ekelseya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekelseya/denverprotestinfo/issues"
+  },
+  "homepage": "https://github.com/ekelseya/denverprotestinfo#readme"
+}
