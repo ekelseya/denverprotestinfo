@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card mb-3">
+                <img class="card-img-top" src="<%=organization.image%>" alt="">
+                <h4 class="card-title mx-2">
+                    <a><%=organization.name%></a>
+                    <% if (organization.credible) { %>
+                    <div class="float-right"><i class="fas fa-check-circle"></i></div>
+                    <% } else { %>
+                    <div class="float-right"><i class="far fa-times-circle"></i></div>
+                    <% } %>
+                </h4>
+                <div class="card-text">
+                    <p class="mx-2"><%=organization.description%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include("../partials/footer") %>
