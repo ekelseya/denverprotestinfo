@@ -175,3 +175,6 @@ fabric.properties
 
 # TernJS port file
 .tern-port
+
+# Constants
+constants/
