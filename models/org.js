@@ -5,6 +5,7 @@ const orgSchema = new mongoose.Schema({
     image: String,
     description: String,
     contact: String,
+    credible: Boolean,
     // comments: [
     //     {
     //         type: mongoose.Schema.Types.ObjectId,

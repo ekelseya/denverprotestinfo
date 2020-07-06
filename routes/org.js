@@ -21,8 +21,8 @@ router.post("/groups", isLoggedIn, function (req, res) {
     const image = req.body.image;
     const description = req.body.description;
     const contact = req.body.contact;
-
-    const newOrganization = {name: name, image: image, description: description, contact: contact};
+    const credible = req.body.credible;
+    const newOrganization = {name: name, image: image, description: description, contact: contact, credible: credible};
     Organization.create(newOrganization, function (err) {
         if (err){
             console.log(err);
